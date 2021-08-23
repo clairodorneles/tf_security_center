@@ -135,7 +135,7 @@ resource "azurerm_network_interface" "nic2" {
 
 }
 
-resource "azurerm_linux_virtual_machine" "vm-linux-n1" {
+resource "azurerm_linux_virtual_machine" "vm-linux-1" {
     name                  = "vm-linux-1"
     location              = azurerm_resource_group.rg.location
     resource_group_name   = azurerm_resource_group.rg.name
@@ -169,7 +169,7 @@ resource "azurerm_linux_virtual_machine" "vm-linux-n1" {
 
 }
 
-resource "azurerm_windows_virtual_machine" "vm-windows-1" {
+resource "azurerm_windows_virtual_machine" "vm-windows-2" {
   name                = "vm-win-1"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
@@ -193,3 +193,4 @@ resource "azurerm_windows_virtual_machine" "vm-windows-1" {
   }
   tags          = var.tags
 }
+
